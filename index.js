@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 import Cities from './Cities';
-import Indian from './Indian';
+import Movie from './Movie';
 import Pakistan from './Pakistan';
 class App extends Component {
   constructor() {
@@ -25,6 +25,6 @@ class App extends Component {
   }
 }
 
-render(<Cities />, document.getElementById('root'));
+render(<Movie />, document.getElementById('root'));
 // what is the meanng of react from scratch
 // <div><Indian /><hr /><Pakistan /></div>
