@@ -30,8 +30,8 @@ class Movie extends Component{
   }
 
   delMovie = (i) =>{
-    alert("Delete Data")
-    let movies= this.state.movielist.splice; movies.splice(i,1);
+    alert("Delete Movie")
+    let movies= this.state.movielist; movies.splice(i,1);
     this.setState({
       movielist : movies
     })
