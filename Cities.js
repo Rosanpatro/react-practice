@@ -27,7 +27,7 @@ class Cities extends Component{
   }
 
   delCity=(i)=>{
-    alert("del")
+    alert("Delete City")
     let cities = this.state.citylist;cities.splice(i,1);
     console.log(i,cities)
     this.setState({
