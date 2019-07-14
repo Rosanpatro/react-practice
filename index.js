@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
-import Cities from './Cities';
-import Movie from './Movie';
-import Cricket from './Cricket';
+import Employes from './Employes';
+import Players from './Players';
+import Mystate from './Mystate';
 class App extends Component {
   constructor() {
     super();
@@ -25,6 +25,6 @@ class App extends Component {
   }
 }
 
-render(<Cricket />, document.getElementById('root'));
+render(<Players />, document.getElementById('root'));
 // what is the meanng of react from scratch
 // <div><Indian /><hr /><Pakistan /></div>
