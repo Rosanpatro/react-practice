@@ -4,7 +4,7 @@ import Hello from './Hello';
 import './style.css';
 import Employes from './Employes';
 import Players from './Players';
-import Mystate from './Mystate';
+import Posts from './Posts';
 class App extends Component {
   constructor() {
     super();
@@ -25,6 +25,6 @@ class App extends Component {
   }
 }
 
-render(<Employes />, document.getElementById('root'));
+render(<Posts />, document.getElementById('root'));
 // what is the meanng of react from scratch
 // <div><Indian /><hr /><Pakistan /></div>
