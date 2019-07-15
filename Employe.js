@@ -1,26 +1,21 @@
-import React,{useState} from 'react';
+import React from 'react';
 
 const Employe = (props) => {
 
-  const[emp_name,setEmpName]=useState("");
-  const[emp_age,setEmpAge]=useState("");
-  const[emp_pic,setEmpImage]=useState("");
-  const[emp_company,setEmpCompany]=useState("");
-  const[emp_sal,setEmpSalary]=useState("");
-
   return(
     <div>
-    <p>Employee Name:<input value={props.ename} onChange={(evt)=>setEmpName(evt.target.value)}/></p>
+    <p>Employee Name:<input onChange={(evt)=>props.ename(evt.target.value)}/></p>
     <p>
-    Employee Age:<input value={props.eage} onChange={(evt)=>setEmpAge(evt.target.value)}/>
-    </p>
-    <img src={props.epic} width="100" height="100" />
-    <p>
-    Employee Company:<input value={props.ecomp} onChange={(evt)=>setEmpCompany(evt.target.value)}/>
+    Employee Age:<input onChange={(evt)=>props.eage(evt.target.value)}/>
     </p>
     <p>
-    Employee Salary:<input value={props.esal} onChange={(evt)=>setEmpSalary(evt.target.value)}/>
+    Employee Company:<input onChange={(evt)=>props.ecomp(evt.target.value)}/>
     </p>
+    <p>
+    Employee Salary:<input onChange={(evt)=>props.esal(evt.target.value)}/>
+    </p>
+    <hr/>
+    {props.emname} is {props.emage} years old. He/She is working at {props.emcomp} company and his/her salary is {props.emsal}.
     </div>
   )
 }

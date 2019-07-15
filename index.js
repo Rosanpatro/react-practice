@@ -25,6 +25,6 @@ class App extends Component {
   }
 }
 
-render(<Players />, document.getElementById('root'));
+render(<Employes />, document.getElementById('root'));
 // what is the meanng of react from scratch
 // <div><Indian /><hr /><Pakistan /></div>
