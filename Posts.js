@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 
 const Posts = ()=>{
@@ -21,9 +21,9 @@ const Posts = ()=>{
     <table>
     <th>Title</th><th>Body</th>
     {
-      posts.map((post) =>{
+      posts.map((post,i) =>{
         return(
-          <tr>
+          <tr key={i}>
           <td>{post.title}</td>
           <td>{post.body}</td>
           </tr>
