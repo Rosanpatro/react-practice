@@ -1,3 +1,4 @@
+//using of Higher Order Component
 import React,{Component} from 'react';
 
 const CricketsHOC = (WrappedComponent) => {

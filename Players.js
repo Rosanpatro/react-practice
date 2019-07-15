@@ -1,3 +1,4 @@
+//using of hooks like useReducer in functional component
 import React,{useReducer} from 'react';
 
 let iniState={

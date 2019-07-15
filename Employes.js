@@ -1,3 +1,4 @@
+//using of hooks like useState in functional component
 import React,{useState} from 'react';
 import Employe from './Employe';
 

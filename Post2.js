@@ -1,3 +1,4 @@
+//using of axios and componentDidMount in class Component
 import React,{Component} from 'react';
 import axios from 'axios';
 

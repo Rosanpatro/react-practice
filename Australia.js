@@ -1,3 +1,4 @@
+//use of Higher Order Component
 import React,{Component} from 'react';
 import CricketsHOC from './Crickets';
 
