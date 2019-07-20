@@ -4,7 +4,7 @@ import Hello from './Hello';
 import './style.css';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
-import Counter from './Counter';
+import Players1 from './Players1';
 let iniState = {
   count : 0
 }
@@ -51,4 +51,4 @@ class App extends Component {
   }
 }
 
-render(<Provider store = {store}><Counter /></Provider>, document.getElementById('root'));
+render(<Provider store = {store}><Players1 /></Provider>, document.getElementById('root'));
