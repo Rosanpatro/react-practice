@@ -23,8 +23,8 @@ Number of players are {this.props.cPlayer}<br/><hr/>
 let mapStateToProps =state=>{
   console.log('The run is ',state.count)
 return {
-  cRuns : state.runsRed.count,
-  cPlayer : state.playerRed.player
+  cRuns : state.runsRed.count,  //using multiple reducer
+  cPlayer : state.playerRed.player  //using multiple reducer
 }
 }
 

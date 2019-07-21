@@ -10,14 +10,14 @@ import cricketReducer from './store/cricket.reducer';
 import playersReducer from './store/players.reducer';
 import runsReducer from './store/runs.reducer';
 
-//let store = createStore(cricketReducer);
-let rootReducer = combineReducers({
+//let store = createStore(cricketReducer);//using single reducer
+let rootReducer = combineReducers({ //using multiple reducer
   playerRed : playersReducer,
   runsRed : runsReducer
 });
 
 
-let store = createStore(rootReducer);
+let store = createStore(rootReducer);//using multiple reducer
 
 class App extends Component {
   constructor() {

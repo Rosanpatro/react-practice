@@ -1,3 +1,4 @@
+//using multiple reducer
 let iniPlayers = {
   player : 11
 }

@@ -1,3 +1,4 @@
+//using single reducer
 let iniState = {
   count : 0,
   player : 11
