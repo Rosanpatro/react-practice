@@ -8,7 +8,7 @@ render(){
   return (
     <div>
 The count is {this.props.cRuns}<br/>
-Number of players are {this.props.cPlayer}<br/>
+Number of players are {this.props.cPlayer}<br/><hr/>
 <button onClick={this.props.cONE}>One</button> | 
 <button onClick={this.props.cFOUR}>Four</button> |
 <button onClick={this.props.cSIX}>Six</button> | 
@@ -23,8 +23,8 @@ Number of players are {this.props.cPlayer}<br/>
 let mapStateToProps =state=>{
   console.log('The run is ',state.count)
 return {
-  cRuns : state.count,
-  cPlayer : state.player
+  cRuns : state.runsRed.count,
+  cPlayer : state.playerRed.player
 }
 }
 

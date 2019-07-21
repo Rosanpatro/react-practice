@@ -3,55 +3,21 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 
-import {createStore} from 'redux';
+import {createStore,combineReducers} from 'redux';
 import {Provider} from 'react-redux';
 import Players1 from './Players1';
-let iniState = {
-  count : 0,
-  player : 11
-}
+import cricketReducer from './store/cricket.reducer';
+import playersReducer from './store/players.reducer';
+import runsReducer from './store/runs.reducer';
 
-let rootreducer = (state=iniState,action)=>{
-if(action.type == "ONE"){
-return {
-  ...state,//spread operator
-  count : state.count+1
-}
-}
-if(action.type == "FOUR"){
-  return {
-    ...state,
-    count : state.count+4
-}
-}
-if(action.type == "SIX"){
-  return {
-    ...state,
-    count : state.count+6
-}
-}
-if(action.type == "OUT"){
-  return {
-    ...state,
-    player : state.player-action.val
-}
-}
-/*
-switch(action.type)
-{}
-case 'SIX':
-{
-  return {
-    ...state,
-    count : state.count+6
-  }
-}
-*/
-return state;
-}
+//let store = createStore(cricketReducer);
+let rootReducer = combineReducers({
+  playerRed : playersReducer,
+  runsRed : runsReducer
+});
 
-let store = createStore(rootreducer);
 
+let store = createStore(rootReducer);
 
 class App extends Component {
   constructor() {
