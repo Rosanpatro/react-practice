@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
+
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import Players1 from './Players1';
@@ -35,6 +36,17 @@ if(action.type == "OUT"){
     player : state.player-action.val
 }
 }
+/*
+switch(action.type)
+
+case 'SIX':
+{
+  return {
+    ...state,
+    count : state.count+6
+  }
+}
+*/
 return state;
 }
 

@@ -7,8 +7,8 @@ class Players1 extends React.Component{
 render(){
   return (
     <div>
-The count is {this.props.cPlayer}<br/>
-Number of players are {this.props.cOut}<br/>
+The count is {this.props.cRuns}<br/>
+Number of players are {this.props.cPlayer}<br/>
 <button onClick={this.props.cONE}>One</button> | 
 <button onClick={this.props.cFOUR}>Four</button> |
 <button onClick={this.props.cSIX}>Six</button> | 
@@ -23,8 +23,8 @@ Number of players are {this.props.cOut}<br/>
 let mapStateToProps =state=>{
   console.log('The run is ',state.count)
 return {
-  cPlayer : state.count,
-  cOut : state.player
+  cRuns : state.count,
+  cPlayer : state.player
 }
 }
 
