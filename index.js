@@ -38,7 +38,7 @@ if(action.type == "OUT"){
 }
 /*
 switch(action.type)
-
+{}
 case 'SIX':
 {
   return {
