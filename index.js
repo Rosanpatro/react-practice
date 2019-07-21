@@ -13,7 +13,7 @@ let iniState = {
 let rootreducer = (state=iniState,action)=>{
 if(action.type == "ONE"){
 return {
-  ...state,
+  ...state,//spread operator
   count : state.count+1
 }
 }
