@@ -9,6 +9,7 @@ import Players1 from './Players1';
 import cricketReducer from './store/cricket.reducer';
 import playersReducer from './store/players.reducer';
 import runsReducer from './store/runs.reducer';
+import Myroute from './Myroute';
 
 //let store = createStore(cricketReducer);//using single reducer
 let rootReducer = combineReducers({ //using multiple reducer
@@ -39,9 +40,11 @@ class App extends Component {
   }
 }
 
-render(<Provider store = {store}><Players1 /></Provider>, document.getElementById('root'));
+render(<Myroute />, document.getElementById('root'));
 
 
+//for multiple reducer using redux
+//<Provider store = {store}><Players1 /></Provider>
 //Index using before Hooks
 /*
 import React, { Component } from 'react';
