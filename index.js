@@ -9,7 +9,7 @@ import Players1 from './Players1';
 import cricketReducer from './store/cricket.reducer';
 import playersReducer from './store/players.reducer';
 import runsReducer from './store/runs.reducer';
-import Myroute from './Myroute';
+import MyRoute from './MyRoute';
 
 //let store = createStore(cricketReducer);//using single reducer
 let rootReducer = combineReducers({ //using multiple reducer
@@ -40,7 +40,7 @@ class App extends Component {
   }
 }
 
-render(<Myroute />, document.getElementById('root'));
+render(<MyRoute />, document.getElementById('root'));
 
 
 //for multiple reducer using redux
