@@ -32,10 +32,10 @@ class Login extends React.Component{
       }
       <p>
       Email: <input onChange={(evt)=> this.setState({email:evt.target.value})} />
-      </p><br/>
+      </p>
       <p>
       Password: <input type="password" onChange={(evt)=> this.setState({password:evt.target.value})} />
-      </p><br/>
+      </p>
       <p>
       <button onClick={this.checkLogin}>Login</button>
       </p>
