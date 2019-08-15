@@ -30,6 +30,7 @@ class Login extends React.Component{
       {
         (this.state.stt)?<Redirect to="/home"/>:<Redirect to="/" />
       }
+      <p>WELCOME</p>
       <p>
       Email: <input onChange={(evt)=> this.setState({email:evt.target.value})} />
       </p>
