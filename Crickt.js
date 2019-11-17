@@ -18,6 +18,14 @@ const CricktHOC = (WrappedComponent) => {
         }
       })
     }
+    // sixRuns = () => {
+    //   this.setState(() => {
+    //     return{
+    //       ...this.state,
+    //       runs : this.state.runs+6
+    //     }
+    //   })
+    // }
     fourRuns = () => {
       this.setState((pre) => {
         return{
